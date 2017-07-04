@@ -1,0 +1,199 @@
+body{
+/*	background:url(../img/black_twill/black_twill.png);*/
+	background:url(../img/subtle_carbon/subtle_carbon.png);
+	
+	font-family: 'Titillium Web', sans-serif;
+	color:#fff;
+}
+
+.cover-grid {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.row.splice {
+    margin-left: 0;
+}
+.cover-grid__row {
+    bottom: 0;
+    height: 100%;
+    pointer-events: none;
+    position: relative;
+}
+.cover-grid .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -2%;
+}
+
+.row.splice .col, .row.splice .xs-col-1, .row.splice .xs-col-2, .row.splice .xs-col-3, .row.splice .xs-col-4, .row.splice .xs-col-5, .row.splice .xs-col-6, .row.splice .xs-col-7, .row.splice .xs-col-8, .row.splice .xs-col-9, .row.splice .xs-col-10, .row.splice .xs-col-11, .row.splice .xs-col-12 {
+    padding-left: 0;
+}
+.cover-grid__column--dark {
+    opacity: 0.6;
+    transition: opacity 1s ease-in-out 0s;
+}
+.cover-grid__column {
+    border-left: 1px solid #e6e1e2;
+    height: 0;
+    opacity: 0.2;
+    pointer-events: none;
+    position: relative;
+    transition: all 2s ease-in-out 0s;
+}
+
+.cover-grid__column__background {
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    height: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+}
+
+.cover-grid .col-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+    width: 25%;
+}
+
+.cover-grid .col-2 {
+    flex-basis: 16.6667%;
+    max-width: 16.6667%;
+    width: 16.6667%;
+}
+
+h1{color:#C5C6CA; font-size:20px; }
+
+
+
+/* resume */
+
+
+
+
+p {
+	margin:5px 0;
+	color:#fff;
+}
+
+a {
+	color:#ccc;
+	text-decoration:none;
+}
+
+a:hover {
+	color:green;
+}
+
+ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+h2 {
+	clear:left;
+	padding-top:10px;
+	font-weight:bold;
+}
+
+h3 {
+	margin:5px 0 10px;
+	font-style:italic;
+	color:#fff;
+	font-size:14px;
+	
+}
+
+h4 {
+	margin:0 0 20px;
+	font-weight:normal;
+}
+
+.twilio { margin:0; }
+
+#resume-container {
+	width:100%;
+	padding-bottom:16px;
+	position:relative;
+	
+}
+.terminal{height:728px;
+	overflow:auto;}
+
+#command-line {
+	float:left;
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+
+.completed-command {
+	float:left;
+}	
+
+#command-line span,
+.completed-command span {
+	float:left;
+	margin-right:5px;
+}
+
+#command-line .commands,
+.completed-command .commands {
+	float:left;
+}
+
+#command-line .commands b {
+	display:block;
+	background-color:#ccc;
+	width:0.75em;
+	height:1em;
+	float:right;
+
+	-webkit-animation: cursor_flash 1s ease-out 0s infinite;
+	   -moz-animation: cursor_flash 1s ease-out 0s infinite;
+	     -o-animation: cursor_flash 1s ease-out 0s infinite;
+	        animation: cursor_flash 1s ease-out 0s infinite;
+}
+
+@-webkit-keyframes cursor_flash { 0%, 100% { opacity:1; } 50% { opacity:0; } }
+   @-moz-keyframes cursor_flash { 0%, 100% { opacity:1; } 50% { opacity:0; } }
+	 @-o-keyframes cursor_flash { 0%, 100% { opacity:1; } 50% { opacity:0; } }
+		@keyframes cursor_flash { 0%, 100% { opacity:1; } 50% { opacity:0; } }
+
+
+.completed-command .commands b {
+	display:none;
+}
+
+p.error {
+	clear:left;
+	margin:5px 0;
+	color:#FF4D75;
+	
+}
+
+#sections, #help, #error, .twilio-instructions,.section {
+	display:none;
+}
+
+ul.skills,
+ul.help {
+	overflow:hidden;
+}	
+
+ul.skills li,
+ul.help li {
+	float:left;
+	margin-right:20px;
+}
+
+#skills h3 {
+	clear:left;
+}
